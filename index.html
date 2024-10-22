@@ -16,9 +16,9 @@
             <h1 class="text-2xl font-bold text-gray-800">Portfolio</h1>
             <nav class="space-x-4">
                 <a href="#about" class="text-gray-600 hover:text-blue-500">À propos</a>
-                <a href="#projects" class="text-gray-600 hover:text-blue-500">Projets</a>
-                <a href="#projects2" class="text-gray-600 hover:text-blue-500">Projets</a>
-                <a href="#projects3" class="text-gray-600 hover:text-blue-500">Projets</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-500">Projets CPIA1</a>
+                <a href="#projects2" class="text-gray-600 hover:text-blue-500">Projets CPIA2</a>
+                <a href="#projects3" class="text-gray-600 hover:text-blue-500">Projets personnels</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a>
             </nav>
         </div>
@@ -192,27 +192,54 @@
             </div>
     </section>
 
-    <!-- Section de contact -->
-    <section id="contact" class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contactez-moi</h2>
-        <div class="max-w-lg mx-auto">
-            <form action="#" method="POST" class="bg-white shadow-lg rounded-lg p-8">
+    <!-- Section de contact mise à jour -->
+<section id="contact" class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Entrons en contact</h2>
+    <p class="text-center text-gray-600 mb-12">
+        N'hésitez pas à m'envoyer un email directement via les options ci-dessous ou utilisez le formulaire pour me laisser un message. Je vous répondrai dès que possible !
+    </p>
+    
+    <div class="max-w-lg mx-auto grid grid-cols-1 gap-8 text-center">
+
+        <!-- Adresse email Outlook -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+            <h3 class="text-2xl font-semibold text-gray-800">Contact via Outlook</h3>
+            <p class="text-gray-600 mt-4">Cliquez ci-dessous pour m'envoyer un email via Outlook.</p>
+            <a href="mailto:votreadresse@outlook.com" class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700">
+                Envoyer via Outlook
+            </a>
+        </div>
+
+        <!-- Adresse email Gmail -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+            <h3 class="text-2xl font-semibold text-gray-800">Contact via Gmail</h3>
+            <p class="text-gray-600 mt-4">Cliquez ci-dessous pour m'envoyer un email via Gmail.</p>
+            <a href="mailto:votreadresse@gmail.com" class="mt-6 inline-block bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-600">
+                Envoyer via Gmail
+            </a>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="bg-white shadow-lg rounded-lg p-8">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Ou laissez un message</h3>
+            <form action="#" method="POST">
                 <div class="mb-4">
                     <label for="name" class="block text-gray-600">Nom</label>
-                    <input type="text" id="name" name="name" class="w-full mt-2 p-2 border rounded-lg focus:ring focus:ring-blue-300">
+                    <input type="text" id="name" name="name" class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-blue-300">
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" class="w-full mt-2 p-2 border rounded-lg focus:ring focus:ring-blue-300">
+                    <input type="email" id="email" name="email" class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-blue-300">
                 </div>
                 <div class="mb-4">
                     <label for="message" class="block text-gray-600">Message</label>
-                    <textarea id="message" name="message" rows="4" class="w-full mt-2 p-2 border rounded-lg focus:ring focus:ring-blue-300"></textarea>
+                    <textarea id="message" name="message" rows="4" class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-blue-300"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Envoyer</button>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Envoyer</button>
             </form>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-4">
