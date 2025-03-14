@@ -6,210 +6,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Selle Baptiste</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="text-gray-800" class="body" id="body">
 
     <!-- Navigation -->
     <header class="bg-white shadow">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-800">Portfolio</h1>
             <nav class="space-x-4">
-                <a href="#about" class="text-gray-600 hover:text-blue-500">À propos</a>
-                <a href="#projects" class="text-gray-600 hover:text-blue-500">Projets CPIA1</a>
-                <a href="#projects2" class="text-gray-600 hover:text-blue-500">Projets CPIA2</a>
-                <a href="#projects3" class="text-gray-600 hover:text-blue-500">Projets personnels</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-500" onclick="view_project(0)">À propos</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-500" onclick="view_project(0)">Projets
+                    CPIA1</a>
+                <a href="#projects2" class="text-gray-600 hover:text-blue-500" onclick="view_project(0)">Projets
+                    CPIA2</a>
+                <a href="#projects3" class="text-gray-600 hover:text-blue-500" onclick="view_project(0)">Projets
+                    personnels</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Section de présentation -->
-    <section id="about" class="container mx-auto px-4 py-16 text-center">
-        <h2 class="text-4xl font-bold text-gray-800">Bonjour, je suis Selle Baptiste</h2>
-        <p class="text-gray-600 mt-4">Etudiants au CESI</p>
-        <a href="#projects" class="mt-8 inline-block px-8 py-4 bg-blue-500 text-white rounded-full hover:bg-blue-600">Voir mes projets</a>
-    </section>
+    <section class="acceuil" id="acceuil">
 
-    <!-- Section des projets -->
-    <section id="projects" class="bg-gray-50 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">CPIA1 Projets</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Section de présentation -->
+        <section id="about" class="container mx-auto px-4 py-16 text-center">
+            <h2 class="text-4xl font-bold text-gray-800">Bonjour, je suis Selle Baptiste</h2>
+            <p class="text-gray-600 mt-4">Etudiants au CESI</p>
+            <a href="#projects"
+                class="mt-8 inline-block px-8 py-4 bg-blue-500 text-white rounded-full hover:bg-blue-600">Voir mes
+                projets</a>
+        </section>
 
-                <!-- Projet 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/elec1.jpg" alt="Projet 1" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Strong box 3000</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
+        <!-- Section des projets -->
+        <section id="projects" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">CPIA1 Projets</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Projet 1 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/elec1.jpg" alt="Projet 1" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Strong box 3000</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(11)">Voir le projet</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Projet 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/signal.jpg" alt="Projet 2" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Escape no game</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
+                    <!-- Projet 2 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/signal.jpg" alt="Projet 2" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Escape no game</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
+                            <a  class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(12)">Voir le projet</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Projet 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/mecha.jpeg" alt="Projet 3" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Fast and Furious</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
+                    <!-- Projet 3 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/mecha.jpeg" alt="Projet 3" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Fast and Furious</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(13)">Voir le projet</a>
+                        </div>
                     </div>
-                </div>
-                <!-- Projet 4 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/indus.jpg" alt="Projet 4" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Projet AQM</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
+                    <!-- Projet 4 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/indus.jpg" alt="Projet 4" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Projet AQM</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(14)">Voir le projet</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Projet 5 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/bdd.jpg" alt="Projet 5" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">DATA-X</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
+                    <!-- Projet 5 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/bdd.jpg" alt="Projet 5" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">DATA-X</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(15)">Voir le projet</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Projet 6 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/btp.jpg" alt="Projet 6" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Projet Contain'House</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
+                    <!-- Projet 6 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/btp.jpg" alt="Projet 6" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Projet Contain'House</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(16)">Voir le projet</a>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
+        </section>
+        <section id="projects2" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">CPIA2 Projets</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Projet 1 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/arduino.jpg" alt="Projet 1" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Projet Worldwide Weather Watcher</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(21)">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/poo.jpg" alt="Projet 2" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Projet POO</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(22)">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/reseaux.jpg" alt="Projet 3" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Projet Resaux</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(23)">Voir le projet</a>
+                        </div>
+                    </div>
+                    <!-- Projet 4 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/web.jpg" alt="Projet 4" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Projet Web</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(24)">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects3" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Projets personnelles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Projet 1 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/logo_lions_GS.png" alt="Projet 1" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">CesiPlayground</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(101)">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/gamingrouen.jpg" alt="Projet 2" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Gaming Rouen Métropole</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(102)">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="Image/manette.jpg" alt="Projet 3" class="w-full">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800">Game Jam</h3>
+                            <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
+                            <a class="mt-4 inline-block text-blue-500 hover:text-blue-600"
+                                onclick="view_project(103)">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="linkedin"
+                style="padding: 20px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 10px; text-align: center; max-width: 500px; margin: 20px auto;">
+                <h2 style="color: #0077B5; font-family: Arial, sans-serif; font-size: 24px; margin-bottom: 10px;">
+                    Retrouvez-moi sur LinkedIn</h2>
+                <p style="color: #333; font-size: 16px; line-height: 1.6; font-family: Arial, sans-serif;">
+                    Connectez-vous avec moi pour en savoir plus sur mon parcours professionnel&nbsp;:
+                    <a href="https://www.linkedin.com/in/baptiste-selle-45743b335" target="_blank"
+                        style="color: #0077B5; font-weight: bold; text-decoration: none;">
+                        Mon Profil LinkedIn
+                    </a>
+                </p>
+            </section>
+
+            <!-- Section de contact mise à jour -->
+            <section id="contact" class="container mx-auto px-4 py-16">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Entrons en contact</h2>
+                <p class="text-center text-gray-600 mb-12">
+                    N'hésitez pas à m'envoyer un email directement via les options ci-dessous ou utilisez le formulaire
+                    pour
+                    me laisser un message. Je vous répondrai dès que possible !
+                </p>
+
+                <div class="max-w-lg mx-auto grid grid-cols-1 gap-8 text-center">
+
+                    <!-- Adresse email Outlook -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-800">Contacter moi via Outlook</h3>
+                        <p class="text-gray-600 mt-4">Cliquez ci-dessous pour m'envoyer un email via Outlook.</p>
+                        <a href="mailto:baptiste.selle@viacesi.fr"
+                            class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700">
+                            Envoyer via Outlook
+                        </a>
+                    </div>
+
+            </section>
+
+        </section>
+
+    </section>
+    <section class="strong_box" id="strong_box">
+        <h2 class="project-title">Nom du Projet</h2>
+        <p class="project-summary">
+            Ce projet consiste à développer une solution innovante pour résoudre un problème spécifique.
+            Il intègre diverses technologies et méthodologies pour une approche efficace.
+        </p>
+        <div class="project-skills">
+            <h3>Compétences Acquises :</h3>
+            <ul>
+                <li>Analyse et conception</li>
+                <li>Développement web</li>
+                <li>Gestion de projet</li>
+                <li>Travail en équipe</li>
+            </ul>
         </div>
     </section>
-    <section id="projects2" class="bg-gray-50 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">CPIA2 Projets</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Projet 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/arduino.jpg" alt="Projet 1" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Projet Worldwide Weather Watcher</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
-                    </div>
-                </div>
-
-                <!-- Projet 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/poo.jpg" alt="Projet 2" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Projet POO</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
-                    </div>
-                </div>
-
-                <!-- Projet 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/reseaux.jpg" alt="Projet 3" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Projet Resaux</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
-                    </div>
-                </div>
-                <!-- Projet 4 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/web.jpg" alt="Projet 4" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Projet Web</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-    </section>
-    <section id="projects3" class="bg-gray-50 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Projets personnelles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Projet 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/logo_lions_GS.png" alt="Projet 1" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">CesiPlayground</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 1 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
-                    </div>
-                </div>
-
-                <!-- Projet 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/gamingrouen.jpg" alt="Projet 2" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Gaming Rouen Métropole</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 2 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
-                    </div>
-                </div>
-
-                <!-- Projet 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="Image/manette.jpg" alt="Projet 3" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Game Jam</h3>
-                        <p class="text-gray-600 mt-2">Description du projet 3 avec des détails intéressants.</p>
-                        <a href="" class="mt-4 inline-block text-blue-500 hover:text-blue-600">Voir le projet</a>
-                    </div>
-                </div>
-            </div>
-            </div>
-    <section id="linkedin" style="padding: 20px; background-color: #f9f9f9; border: 2px solid #e0e0e0; border-radius: 10px; text-align: center; max-width: 500px; margin: 20px auto;">
-    <h2 style="color: #0077B5; font-family: Arial, sans-serif; font-size: 24px; margin-bottom: 10px;">Retrouvez-moi sur LinkedIn</h2>
-    <p style="color: #333; font-size: 16px; line-height: 1.6; font-family: Arial, sans-serif;">
-        Connectez-vous avec moi pour en savoir plus sur mon parcours professionnel&nbsp;:
-        <a href="https://www.linkedin.com/in/baptiste-selle-45743b335" target="_blank" style="color: #0077B5; font-weight: bold; text-decoration: none;">
-            Mon Profil LinkedIn
-        </a>
-    </p>
-</section>
-
-    <!-- Section de contact mise à jour -->
-<section id="contact" class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Entrons en contact</h2>
-    <p class="text-center text-gray-600 mb-12">
-        N'hésitez pas à m'envoyer un email directement via les options ci-dessous ou utilisez le formulaire pour me laisser un message. Je vous répondrai dès que possible !
-    </p>
-    
-    <div class="max-w-lg mx-auto grid grid-cols-1 gap-8 text-center">
-
-        <!-- Adresse email Outlook -->
-        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
-            <h3 class="text-2xl font-semibold text-gray-800">Contacter moi via Outlook</h3>
-            <p class="text-gray-600 mt-4">Cliquez ci-dessous pour m'envoyer un email via Outlook.</p>
-            <a href="mailto:baptiste.selle@viacesi.fr" class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700">
-                Envoyer via Outlook
-            </a>
-        </div>
-
-</section>
+    <section class="escape" id="escape"></section>
+    <section class="fast_furious" id="fast_furious"></section>
+    <section class="projet_aqm" id="projet_aqm"></section>
+    <section class="data_x" id="data_x"></section>
+    <section class="contain_house" id="contain_house"></section>
+    <section class="worldwide_weather" id="worldwide_weather"></section>
+    <section class="poo" id="poo"></section>
+    <section class="reseaux" id="reseaux"></section>
+    <section class="web" id="web"></section>
+    <section class="cesiplayground" id="cesiplayground"></section>
+    <section class="grm" id="grm"></section>
+    <section class="game_jam" id="game_jam"></section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-4">
