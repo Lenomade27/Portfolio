@@ -17,6 +17,10 @@ body {
     background-position : center;
 }
 
+.projet{
+    display: none;
+}
+
 
 .project-card {
     background: white;
@@ -65,54 +69,210 @@ body {
 /*Partie gros block projet*/
 
 .strong_box{
-    display: none;
+    display: none ;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .escape{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .fast_furious{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .projet_aqm{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .data_x{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .contain_house{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .worldwide_weather{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .poo{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .reseaux{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .web{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cesiplayground{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .grm{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .game_jam{
     display: none;
+    flex-direction: column;
+    width: 60%; /* Ajuste la largeur selon tes besoins */
+    max-width: 800px; /* Évite qu'elle devienne trop grande */
+    background: rgba(255, 255, 255, 0.855);
+    padding: 30px;
+    border-radius: 15px; /* Arrondir les bords */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
