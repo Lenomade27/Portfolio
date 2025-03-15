@@ -61,7 +61,7 @@ function view_project(project) {
             element2 = document.getElementById("worldwide_weather");
             element.style.display = "none";
             element2.style.display = "flex";
-            element3.style.backgroundImage = "url('Image/pixelcut-export.jpeg')";
+            element3.style.backgroundImage = "url('Image/arduino.jpg')";
             break;
         case 22:
             element2 = document.getElementById("poo");
